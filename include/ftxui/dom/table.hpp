@@ -50,6 +50,7 @@ class Table {
                                  int row_min,
                                  int row_max);
   Element Render();
+  std::pair<int, int> shape() const { return {input_dim_x_, input_dim_y_}; }
 
  private:
   void Initialize(std::vector<std::vector<Element>>);
